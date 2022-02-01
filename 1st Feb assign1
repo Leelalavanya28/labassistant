@@ -1,0 +1,64 @@
+#include<stdio.h>
+int n=2;
+void addmatrix(int a[n],int b[n][n]);
+ void submatrix(int a[n],int b[n][n]);
+int main()
+{
+  int a[n][n];
+  int b[n][n];
+  int i,j;
+  printf("enter a matrix");
+  for(i=0;i<n;i++)
+  {
+    for(j=0;j<n;j++)
+    {
+      scanf("%d",&a[i][j]);
+      
+    }
+  }
+  printf("enter b matrix");
+  for(i=0;i<n;i++)
+  {
+    for(j=0;j<n;j++)
+    {
+      scanf("%d",&b[i][j]);
+      
+    }
+  }
+  addmatrix(a,b);
+  }
+  void addmatrix(int a[n],int b[n][n]);
+  {
+    int c[n][n];
+    int i,j;
+    printf("adding of two matricec");
+    for(i=0;i<n;i++)
+  {
+    for(j=0;j<n;j++)
+    {
+      c[i][j]=a[i][j]+b[i][j];
+      printf("%d",c[i][j]);
+      }
+      printf("\n");
+    }
+  }
+  submatrix(a,b);
+  }
+  void submatrix(int a[n],int b[n][n]);
+  {
+    int c[n][n];
+    int i,j;
+    printf("subtraction of two matricec");
+    for(i=0;i<n;i++)
+  {
+    for(j=0;j<n;j++)
+    {
+      c[i][j]=a[i][j]-b[i][j];
+      printf("%d",c[i][j]);
+      }
+      printf("\n");
+    }
+  }
+  return 0;
+  }
+  
